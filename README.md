@@ -3,6 +3,7 @@
 ![Docker](https://img.shields.io/badge/Docker-Containerized-blue)
 ![Prometheus](https://img.shields.io/badge/Monitoring-Prometheus-orange)
 ![Grafana](https://img.shields.io/badge/Dashboard-Grafana-yellow)
+![SRE](https://img.shields.io/badge/SRE-Lab-green)
 
 Este laboratório de estudo é focado em práticas de Site Reliability Engineering (SRE), observabilidade e confiabilidade de microserviços.
 
