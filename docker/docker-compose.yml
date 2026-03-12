@@ -72,12 +72,15 @@ services:
   loki:
     image: grafana/loki:latest
     container_name: loki
+    user: root
     ports:
      - "3100:3100"
     command: -config.file=/etc/loki/loki-config.yml
     volumes:
      - ../monitoring/loki/loki-config.yml:/etc/loki/loki-config.yml
      - loki-storage:/loki
+     - loki-var:/var/loki
+     - loki-wal:/wal
 
   promtail:
     image: grafana/promtail:latest
@@ -93,3 +96,5 @@ volumes:
   alertmanager-storage:
   loki-storage:
   prometheus-storage:
+  loki-wal:
+  loki-var:
