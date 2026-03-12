@@ -5,7 +5,7 @@ Este laboratório de estudo é focado em práticas de Site Reliability Engineeri
 O objetivo deste projeto é simular um ambiente real de produção utilizando ferramentas comuns nas arquiteturas.
 
 
-<<<<<<< HEAD
+
 =======
 # Arquitetura do laboratório
 
