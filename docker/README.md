@@ -8,14 +8,14 @@ O arquivo docker-compose.yml define todos os serviços executados no ambiente.
 
 ## Serviços do ambiente
 
-Microservices
-Prometheus
-Grafana
-Alertmanager
-Node Exporter
-cAdvisor
-Loki
-Promtail
+- Microservices
+- Prometheus
+- Grafana
+- Alertmanager
+- Node Exporter
+- cAdvisor
+- Loki
+- Promtail
 
 ## Objetivo
 
