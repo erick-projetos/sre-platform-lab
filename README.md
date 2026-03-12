@@ -69,22 +69,44 @@ sre-platform-lab
 
 ---
 
-# Objetivo do laboratório
 
-Este laboratório foi criado para estudar e praticar conceitos de:
+## Roadmap do laboratório
 
-- observabilidade
-- monitoramento de microserviços
-- confiabilidade de sistemas distribuídos
-- troubleshooting em ambientes cloud-native e on-premisses
+Este laboratório está sendo desenvolvido para estudar práticas de Site Reliability Engineering (SRE) e observabilidade em ambientes de microserviços.
 
----
+### Infraestrutura
 
-# Próximos passos
+- [x] Ambiente local com Docker
+- [x] Orquestração com Docker Compose
+- [ ] Deploy em Kubernetes
+- [ ] Ambiente em cloud (AWS)
 
-Evoluções planejadas para o laboratório:
+### Monitoramento e observabilidade
 
-- criação de alertas com Alertmanager
-- centralização de logs
-- observabilidade completa do sistema
+- [x] Coleta de métricas com Prometheus
+- [x] Dashboards com Grafana
+- [x] Alertas com Alertmanager
+- [x] Métricas de containers com cAdvisor
+- [x] Métricas de host com Node Exporter
+- [ ] Tracing distribuído (Grafana Tempo ou Jaeger)
+
+### Logs
+
+- [x] Centralização de logs com Loki
+- [x] Coleta de logs com Promtail
+- [ ] Dashboards de logs no Grafana
+
+### Confiabilidade e SRE
+
+- [ ] Implementação de SLO/SLI
+- [ ] Simulação de falhas (Chaos Engineering)
+- [ ] Testes de resiliência
+
+### DevOps
+
+- [ ] Pipeline CI/CD
+- [ ] Deploy automatizado
+- [ ] Versionamento de infraestrutura
+
+
 
