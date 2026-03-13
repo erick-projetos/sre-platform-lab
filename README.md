@@ -86,14 +86,14 @@ Este laboratório está sendo desenvolvido para estudar práticas de Site Reliab
 - [x] Coleta de métricas com Prometheus
 - [x] Dashboards com Grafana
 - [x] Alertas com Alertmanager
-- [x] Métricas de containers com cAdvisor
-- [x] Métricas de host com Node Exporter
+- [ ] Métricas de containers com cAdvisor
+- [ ] Métricas de host com Node Exporter
 - [ ] Tracing distribuído (Grafana Tempo ou Jaeger)
 
 ### Logs
 
-- [x] Centralização de logs com Loki
-- [x] Coleta de logs com Promtail
+- [ ] Centralização de logs com Loki
+- [ ] Coleta de logs com Promtail
 - [ ] Dashboards de logs no Grafana
 
 ### Confiabilidade e SRE
