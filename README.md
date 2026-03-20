@@ -9,7 +9,7 @@ Laboratório prático de observabilidade, confiabilidade e SRE inspirado em ambi
 
 ---
 
-# 🧠 Arquitetura
+# Arquitetura
 
 ```
 App → Prometheus → Alertmanager → Slack
@@ -20,11 +20,11 @@ App → Prometheus → Alertmanager → Slack
 
 ---
 
-# 📦 Arquitetura do laboratório
+# Arquitetura do laboratório
 
 O ambiente é composto por microserviços simples executados em containers Docker e orquestrados com Docker Compose, onde são aplicadas práticas de monitoramento, instrumentação e correlação de logs e traces, além da configuração de alertas com Alertmanager e envio de notificações via Slack.
 
-### 🔧 Microserviços simulados:
+### Microserviços simulados:
 
 * auth-service → responsável por autenticação
 * analytics-service → responsável pelo processamento de eventos
@@ -34,7 +34,7 @@ Esses serviços geram métricas que são coletadas pela stack de observabilidade
 
 ---
 
-# 🛠️ Stack utilizada
+# Stack utilizada
 
 ### Infraestrutura
 
@@ -55,7 +55,7 @@ Esses serviços geram métricas que são coletadas pela stack de observabilidade
 
 ---
 
-# ⚙️ Como o laboratório funciona
+# Como o laboratório funciona
 
 1️⃣ Os microserviços são executados em containers Docker
 2️⃣ O Docker Compose gerencia toda a infraestrutura local
@@ -68,7 +68,7 @@ Isso permite simular um ambiente semelhante ao utilizado em sistemas distribuíd
 
 ---
 
-# 🌐 Serviços e portas
+# Serviços e portas
 
 | Serviço           | Porta |
 | ----------------- | ----- |
@@ -81,7 +81,7 @@ Isso permite simular um ambiente semelhante ao utilizado em sistemas distribuíd
 
 ---
 
-# 📁 Estrutura do projeto
+# Estrutura do projeto
 
 ```text
 sre-platform-lab/
@@ -113,13 +113,13 @@ sre-platform-lab/
 
 ---
 
-## 🚀 Funcionalidades implementadas
+## Funcionalidades implementadas
 
-* 📈 Métricas customizadas (requests, erros, latência)
-* 🚨 Alertas baseados em SLO (error rate, latency, no traffic)
-* 🔔 Integração com Slack (notificação em tempo real)
-* 🔍 Correlação logs ↔ traces (Loki + Tempo)
-* 📊 Dashboard estilo NOC no Grafana
+* Métricas customizadas (requests, erros, latência)
+* Alertas baseados em SLO (error rate, latency, no traffic)
+* Integração com Slack (notificação em tempo real)
+* Correlação logs ↔ traces (Loki + Tempo)
+* Dashboard estilo NOC no Grafana
 
 ---
 
@@ -135,7 +135,7 @@ sre-platform-lab/
 
 ---
 
-## 🚀 Como executar
+## Como executar
 
 ```bash
 docker-compose up -d --build
@@ -149,12 +149,6 @@ Acessos:
 
 ---
 
-## 🎯 Objetivo
 
-Simular um ambiente completo de observabilidade, aplicando conceitos de SRE na prática.
 
----
 
-## 👨‍💻 Autor
-
-Erick Saraiva
