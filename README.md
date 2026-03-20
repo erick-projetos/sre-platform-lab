@@ -2,10 +2,15 @@
 
 Laboratório prático de observabilidade, confiabilidade e SRE inspirado em ambientes reais de produção.
 
-![Docker](https://img.shields.io/badge/Docker-Containerized-blue)
-![Prometheus](https://img.shields.io/badge/Monitoring-Prometheus-orange)
-![Grafana](https://img.shields.io/badge/Dashboard-Grafana-yellow)
-![SRE](https://img.shields.io/badge/SRE-Lab-green)
+![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?logo=docker&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-Metrics-E6522C?logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-Dashboard-F46800?logo=grafana&logoColor=white)
+![Loki](https://img.shields.io/badge/Loki-Logs-3B82F6?logo=grafana&logoColor=white)
+![Tempo](https://img.shields.io/badge/Tempo-Tracing-6E44FF?logo=grafana&logoColor=white)
+![Alertmanager](https://img.shields.io/badge/Alertmanager-Alerting-E02F44)
+![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-Instrumentation-8A2BE2?logo=opentelemetry&logoColor=white)
+![Slack](https://img.shields.io/badge/Slack-Notifications-4A154B?logo=slack&logoColor=white)
+![SRE](https://img.shields.io/badge/SRE-Observability%20Lab-0A0A0A)
 
 ---
 
