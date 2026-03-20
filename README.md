@@ -57,12 +57,12 @@ Esses serviços geram métricas que são coletadas pela stack de observabilidade
 
 # Como o laboratório funciona
 
-1️⃣ Os microserviços são executados em containers Docker
-2️⃣ O Docker Compose gerencia toda a infraestrutura local
-3️⃣ O Prometheus coleta métricas expostas pelos serviços
-4️⃣ O Grafana visualiza métricas em dashboards
-5️⃣ O Alertmanager gerencia e agrupa alertas
-6️⃣ O Slack recebe notificações em tempo real
+- Microserviços executados em containers Docker  
+- Orquestração via Docker Compose  
+- Coleta de métricas com Prometheus  
+- Visualização com Grafana  
+- Gerenciamento de alertas com Alertmanager  
+- Notificações em tempo real via Slack  
 
 Isso permite simular um ambiente semelhante ao utilizado em sistemas distribuídos modernos.
 
@@ -123,15 +123,10 @@ sre-platform-lab/
 
 ---
 
-## 📸 Demonstração
+## Imagens
 
+Acesse os prints do projeto aqui
 
-
-```text
-/images/dashboard.png
-/images/alerts.png
-/images/slack.png
-```
 
 ---
 
