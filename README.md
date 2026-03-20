@@ -123,12 +123,6 @@ sre-platform-lab/
 
 ---
 
-## Imagens
-
-Acesse os prints do projeto aqui
-
-
----
 
 ## Como executar
 
@@ -142,7 +136,34 @@ Acessos:
 * Prometheus → http://localhost:9090
 * Alertmanager → http://localhost:9093
 
+
 ---
+
+
+
+
+
+
+## Prometheus
+<img width="1911" height="593" alt="Grafana" src="https://github.com/user-attachments/assets/e49256d5-6249-43ee-803a-f723ab589f79" />
+
+## Grafana
+<img width="1889" height="539" alt="prometheus" src="https://github.com/user-attachments/assets/ec52480a-7e3e-4c97-a17c-d67a36f91270" />
+
+## Correlação Logs e Traces (Loki + Tempo)
+<img width="1890" height="874" alt="correlação" src="https://github.com/user-attachments/assets/d5677825-3323-4474-9a39-4ca8f219fcf4" />
+
+## Notificação no Slack
+<img width="590" height="435" alt="Slack" src="https://github.com/user-attachments/assets/350fcaec-2983-4f88-8441-643b0c9dd280" />
+
+## Alertas no Alertmanager
+<img width="860" height="786" alt="Alertmanager" src="https://github.com/user-attachments/assets/187de70e-4ff3-491e-8a44-9b3e55f36140" />
+
+
+
+---
+
+
 
 
 
