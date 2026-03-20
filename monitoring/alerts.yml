@@ -1,0 +1,62 @@
+groups:
+  - name: sre-alerts
+    rules:
+
+      # 🔴 Erro absoluto (qualquer erro recente)
+      - alert: HighErrorRate
+        expr: increase(http_requests_total{status="500"}[1m]) > 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Erro detectado"
+          description: "Uma ou mais requisições com erro 500 foram registradas"
+
+      # 🔴 Erro percentual (SLO real)
+      - alert: HighErrorRatePercentage
+        expr: |
+          (
+            rate(http_requests_total{status="500"}[1m])
+            /
+            rate(http_requests_total[1m])
+          ) > 0.05
+        for: 30s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Alta taxa de erro (%)"
+          description: "Mais de 5% das requisições estão falhando"
+
+      # 🟠 Latência alta (P95)
+      - alert: HighLatencyP95
+        expr: |
+          histogram_quantile(
+            0.95,
+            rate(request_duration_seconds_bucket[1m])
+          ) > 1
+        for: 30s
+        labels:
+          severity: warning
+        annotations:
+          summary: "Alta latência P95"
+          description: "95% das requisições estão acima de 1 segundo"
+
+      # 🔴 Serviço sem tráfego (possível queda)
+      - alert: NoTraffic
+        expr: rate(http_requests_total[2m]) == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Sem tráfego"
+          description: "Nenhuma requisição recebida nos últimos minutos"
+
+      # 🔴 Pico de erro (burst)
+      - alert: ErrorBurst
+        expr: increase(http_requests_total{status="500"}[1m]) > 20
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Pico de erros"
+          description: "Mais de 20 erros em 1 minuto"
